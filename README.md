@@ -5,10 +5,10 @@ Convert spectral radiometric data to the XYZ tristimulus values.
 ## Description
 
 The XYZ tristimulus values are computed by:
-$$ X=\int_0^{\infty} {L(\lambda)\overline{x}(\lambda)} \, {\rm d}\lambda $$
-$$ Y=\int_0^{\infty} {L(\lambda)\overline{y}(\lambda)} \, {\rm d}\lambda $$
-$$ Z=\int_0^{\infty} {L(\lambda)\overline{z}(\lambda)} \, {\rm d}\lambda $$
-where $ L(\lambda) $ is the spectral radiometric value of a primary light source, and $ \overline{x}(\lambda), \overline{y}(\lambda), \overline{z}(\lambda) $ are the CIE 1931 color matching functions.
+$$X=\int_0^{\infty} {L(\lambda)\overline{x}(\lambda)} \, {\rm d}\lambda$$
+$$Y=\int_0^{\infty} {L(\lambda)\overline{y}(\lambda)} \, {\rm d}\lambda$$
+$$Z=\int_0^{\infty} {L(\lambda)\overline{z}(\lambda)} \, {\rm d}\lambda$$
+where $L(\lambda)$ is the spectral radiometric value of a primary light source, and $\overline{x}(\lambda), \overline{y}(\lambda), \overline{z}(\lambda)$ are the CIE 1931 color matching functions.
 In this program, I included two approximations to the color matching functions. One is provided by [Waveform lighting](https://www.waveformlighting.com/tech/color-matching-function-x-y-z-values-by-wavelength-csv-excel-format) and the other is from [NVIDIA research](https://jcgt.org/published/0002/02/01/paper.pdf), which uses a multi-lobe Guassian fit.
 
 ## How to run the program
